@@ -5,6 +5,11 @@
 
 [CloudScanner 📡](https://github.com/Boavizta/cloud-scanner) is a tool that leverages [BoaviztAPI 🛠️](https://github.com/Boavizta/boaviztapi) to assess environmental impacts of your AWS account.
 
+🔗 Links:
+
+* Repository: [Boavizta/cloud-scanner](https://github.com/Boavizta/cloud-scanner)
+* [Docs](https://boavizta.github.io/cloud-scanner/intro.html)
+
 ## Commands
 
 Use the CLI with [🐳 Docker](https://boavizta.github.io/cloud-scanner/tutorials/quickstart-docker.html) or [🦀 Cargo](https://boavizta.github.io/cloud-scanner/tutorials/quickstart-rust-cli.html)
