@@ -10,9 +10,31 @@
 * Repository: [Boavizta/cloud-scanner](https://github.com/Boavizta/cloud-scanner)
 * [Docs](https://boavizta.github.io/cloud-scanner/intro.html)
 
+
 ## Commands
 
 Use the CLI with [🐳 Docker](https://boavizta.github.io/cloud-scanner/tutorials/quickstart-docker.html) or [🦀 Cargo](https://boavizta.github.io/cloud-scanner/tutorials/quickstart-rust-cli.html)
+
+<details><summary>Using docker:</summary>
+Replace `cloud-scanner-cli` by the following:
+
+```bash
+docker run -it ghcr.io/boavizta/cloud-scanner-cli:latest
+```
+</details>
+
+
+<details><summary>Using cargo:</summary>
+After installing the Rust toolchain and cloning the project, you can replace `cloud-scanner-cli` by the following:
+
+```bash
+cargo run --
+```
+
+A binary will be released soon to ease the installation to use it in CLI.
+</details>
+
+
 
 ### Inventory: list instances
 
@@ -21,7 +43,7 @@ Command `inventory` will list all EC2 instances from an AWS account within a spe
 Example:
 
 ```bash
-cargo run -- --aws-region eu-west-3 inventory | jq
+cloud-scanner-cli --aws-region eu-west-3 inventory | jq
 ```
 
 Output:
@@ -64,7 +86,7 @@ Command `estimate` will evaluate the impacts of using EC2 instances for specific
 Example:
 
 ```bash
-cargo run -- --aws-region eu-west-3 estimate --hours-use-time 24 | jq
+cloud-scanner-cli --aws-region eu-west-3 estimate --hours-use-time 24 | jq
 ```
 
 <details><summary>Output:</summary>
@@ -193,6 +215,8 @@ Command `serve` will start and HTTP server to expose metrics.
 ## Dashboard
 
 ### Using Docker Compose
+
+You can clone the project and run:
 
 ```bash
 export AWS_PROFILE=my-profile-name
