@@ -8,7 +8,7 @@ We invite you discover and test the following tools yourself!
 
 [Scaphandre ⚡️](https://github.com/hubblo-org/scaphandre) is a metrology agent dedicated to measure power consumption metrics.
 
-[📖 Learn more in this workshop](scaphandre.md)
+[📖 Learn more in this workshop](https://github.com/benjaminlebigot/boavizta-workshops/blob/main/scaphandre/scaphandre-sheet.md)
 
 ### BoaviztAPI 🛠️
 
